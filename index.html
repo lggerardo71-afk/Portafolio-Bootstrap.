@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Codificación y metadatos básicos de la página -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Gerardo Labra Garcia"/>
+    <meta name="description" content="Portafolio profesionalde consultoría informática y desarrollo web">
+    <meta name="keywords" content="HTML, CSS, JS,Bootstrap, portafolio, desarrollo web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portafolio | Gerardo Labra García</title>
+
+    <!--Favicon (imagen pequeña que parece en el navegador)-->
+    <link rel="icon" type="image/png" href="assets/img/Finsi5.jpg"/>
+   
+    <!-- Bootstrap: framework CSS que facilita el diseño responsivo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!--Bootstrap Icons: biblioteca de íconos utilizada en tarjetas, botones y redes sociales-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrapicons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!--Fuente Montserrat desde Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!--Hoja de estilos personalizada del proyecto-->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <!--Importando enlace a iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--Importando CSS personalizado-->
+    <link rel="stylesheet" href="assets/css/style.css" as="style">
+</head>
+<body>
+    <h1>Hola a tod@s, estamos en el portafolio</h1>
+    <i class="bi bi-airplane-fill"></i>
+
+    <!--Importando herramienta JS de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     
+</body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top shadow-sm">
+    <div class="container">
+
+        <!-- Marca o logotipo del sitio -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+            <img src="assets/img/Finsi5.jpg" alt="Logo del portafolio" width="150" height="100">
+            <span>GLabra</span>
+        </a>
+
+        <!-- Botón hamburguesa: aparece en pantallas pequeñas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <!-- Enlaces del menú -->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                <li class="nav-item"><a class="nav-link active" href="#sobre-mi">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#conocimientos">Conocimientos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#articulos">Artículos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                <li class="nav-item"><a class="btn btn-primary rounded-pill px-4" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <!--Encabezado principal / Hero-->
+        <header id="inicio" class="hero">
+            <div class="container">
+                <div class="row align-items-center g-5 ">
+        <!--Texto principal del Hero-->
+                    <div class="col-lg-6 text-center text-lg-start"></div>
+                        <span class="badge rounded-pill hero-badge mb-3">
+                            Consultoría Informática - Desarrollo web - Formación Digital
+                        </span>
+                        <h1 class="display-4 fw-bold">Hola, soy Gerardo Labra García</h1>
+                        <p class="lead hero-texto">acompaño proyectos tecnológicos mediante consultoría, diseño web y soluciones digitales pensadas para personas, instituciones y empresas</p>
+
+        <!--Botones de acción rápida-->
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a class="btn btn-primary btn-lg rounded-pill" href="#experiencia">Ver servicios <i class="bi bi-arrow-right-circle ms-1"></i>
+                        </a>
+                        <a class="btn btn-primary btn-lg rounded-pill" href="#articulos">Leer artículos <i class="bi bi-arrow-right-circle ms-1"></i>
+                        </a>
+                    </div>
+                 </div>
+
+        <!--Bloque visual del hero-->
+            <div class="col-lg-6">
+                <div class="hero-card mx-auto">
+                    <img class="perfil-imagen rounded-circle img-fluid" src="assets/img/Gussy sad_n.jpg" alt="Foto del desarrollador" width="180" height="180">
+                    <img class="hero-imagen img-fluid" src="assets/img/Checoneta.jpg" alt="Imagen representativa del portafolio" width="350" height="250">
+            </div>
+        </div>
+    </div>
+</div>
+        </header>
+ 
+        <!--Seccion sobre mi-->
+        <main>
+            <section id="sobre-mi" class="seccion seccion-oscura">
+                <div class="container text-center">
+                    <h2 class="seccion-titulo">Conoce un poco de mi</h2>
+                    <p class="sobre-mi-texto mx-auto">Mi trabajo se enfoca en acercar la tecnología a problemas concretos: desde la asesoría informática y el diseño de sitios web, hasta la formación de personas que 
+desean comprender mejor el mundo digital. La idea es construir soluciones claras, funcionales y útiles; no castillos de código que nadie pueda habitar.</p>
+                </div>
+            <section>
+
+        <!--Seccion Experiencia Profesional-->
+            <section id="experiencia" class="seccion seccion-clara">
+                <div class="container text-center">
+                    <h2 class="seccion-titulo">Experiencia profesional</h2>
+                    <p class="seccion-descripcion">Cada tarjeta funciona como una pequeña vitrina: muestra un área de experiencia, una explicación breve y etiquetas tecnológicas..</p>
+                    <div class="row g-4">
+
+        <!--Tarjeta 1-->
+                <div class="col-12 col-md-4">
+                    <article class="servicio-card h-100">
+                        <i class="bi bi-cpu-fill"></i>
+                        <h3>Consultoria en Informática</h3>
+                        <p>Diagnóstico, mantenimiento y acompañamiento en el uso de hardware, software, seguridad básica y servicios digitales.</p>
+                        <div class="badges-contenedor">
+                            <span class="badge text-bg-primary">Hardware</span>
+                            <span class="badge text-bg-primary">Software</span>
+                            <span class="badge text-bg-primary">Seguridad</span>
+                            <span class="badge text-bg-primary">Nube</span>
+                    </div>
+                </article>
+            </div>
+
+        <!--Tarjeta 2-->
+                <div class="col-12 col-md-4">
+                    <article class="servicio-card h-100">
+                        <i class="bi bi-cpu-fill"></i>
+                        <h3>Desarrollo web</h3>
+                        <p> Creación de sitios web claros, responsivos y organizados mediante HTML, CSS, Bootstrap y herramientas modernas.</p>
+                        <div class="badges-contenedor">
+                            <span class="badge text-bg-primary">HTML</span>
+                            <span class="badge text-bg-primary">CSS</span>
+                            <span class="badge text-bg-primary">>Bootstrap</span>
+                            <span class="badge text-bg-primary">PHP</span>
+                    </div>
+                </article>
+            </div>
+
+        <!--Tarjeta 3-->
+                <div class="col-12 col-md-4">
+                    <article class="servicio-card h-100">
+                        <i class="bi bi-mortarboard-fill"></i>
+                        <h3>Experiencia académica</h3>
+                        <p>Diseño de cursos, capacitación y acompañamiento docente para fortalecer competencias digitales y tecnológicas.</p>
+                        <div class="badges-contenedor">
+                            <span class="badge text-bg-primary">Cursos</span>
+                             <span class="badge text-bg-primary">Asesoría</span>
+                            <span class="badge text-bg-primary">Capacitación</span>
+                            <span class="badge text-bg-primary">E-learning</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+ </section>
+        <!--Articulos informativos-->
+            <section id="articulos" class="seccion articulos">
+                <div class="container">
+                    <div class="text-center mb-4">
+                    <h2 class="seccion-titulo">Artículos informativos</h2>
+                    <p class="seccion-descripcion">Una selección de lecturas para conectar la tecnología con temas actuales de educación, salud e inteligencia artificial.</p>
+            </div>
+                <div class="card articulos-card mx-auto">
+                    <div class="card-header">
+                    <i class="bi bi-journal-text me-2"></i>Más recientes</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-itemaction" href="https://redtis.org/index.php/Redtis/article/view/186/170" target="_blank" rel="noopener noreferrer">La realidad virtual aplicada a la salud mental.</a>
+                    <a class="list-group-item list-group-itemaction" href="https://redtis.org/index.php/Redtis/article/view/187/171" target="_blank" rel="noopener noreferrer">Percepción de los estudiantes sobre el uso de la inteligencia artificial.</a>
+                    <a class="list-group-item list-group-itemaction" href="https://redtis.org/index.php/Redtis/article/view/188/172" target="_blank" rel="noopener noreferrer">Competencias digitales docentes en la educación superior.</a>
+                    <a class="list-group-item list-group-itemaction" href="https://redtis.org/index.php/Redtis/article/view/189/173" target="_blank" rel="noopener noreferrer">Procesamiento digital de imágenes para la predicción temprana del cáncer de pulmón.</a>
+            </div>
+                <div class="card-body text-center">
+                    <a class="btn btn-info rounded-pill px-4" href="https://www.redtis.org/index.php/Redtis" target="_blank" rel="noopener noreferrer">Ver más artículos.<i class="bi bi-arrow-rightcircle-fill ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!--Carrusel de Bootstrap-->
+            <section id="testimonios" class="seccion seccion-clara testimonios text-center">
+                <div class="container">
+                    <h2 class="seccion-titulo">Testimonios</h2>
+                    <p class="seccion-descripcion">Estos son algunos comentarios de clientes y colaboradores.</p>
+                <div id="testimoniosCarrusel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+        <!--Testimonio 1-->
+            <div class="carousel-item active">
+            <div class="testimonio-card mx-auto">
+            <img class="testimonio-imagen roundedcircle" src="img/niño.png" alt="Foto de Augusto Pineda">
+                <p class="testimonio-texto">“El acompañamiento permitió ordenar necesidades, priorizar soluciones y convertir una idea general en un proyecto tecnológico más claro.”</p>
+            <div class="testimonio-info">
+                <p class="cliente">Augusto Pineda</p>
+                    <p class="cargo">Gerente comercial</p>
+            </div>
+        </div>
+    </div>
+
+        <!--Testimonio 2-->
+            <div class="carousel-item">
+            <div class="testimonio-card mx-auto">
+            <img class="testimonio-imagen roundedcircle" src="img/boy" alt="Foto de Pedro Ortega">
+                <p class="testimonio-texto">“El sitio web quedó organizado, funcional y fácil de explicar al equipo. Justo lo que necesitábamos para iniciar.”</p>
+            <div class="testimonio-info">
+                <p class="cliente">Pedro Ortega</p>
+                    <p class="cargo">Asesor inmobiliario</p>
+            </div>
+        </div>
+    </div>
+
+        <!--Testimonio 3-->
+            <div class="carousel-item">
+                <div class="testimonio-card mx-auto">
+            <img class="testimonio-imagen roundedcircle" src="img/chiki.jpg" alt="Foto de Gonzalo Zurita">
+                <p class="testimonio-texto">“La asesoría ayudó a comprender el problema antes de elegir la herramienta. Eso evitó trabajo innecesario.”</p>
+            <div class="testimonio-info">
+                <p class="cliente">Gonzalo Zurita</p>
+                    <p class="cargo">Gerente operativo</p>
+            </div>
+        </div>
+    </div>
+ </div>
+
+        <!--Botones del carrusel-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarrusel" data-bsslide="prev">
+                <span class="carousel-control-prev-icon" ariahidden="true"></span>
+                    <span class="visually-hidden">Anterior</span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarrusel" data-bsslide="next">
+                <span class="carousel-control-next-icon" ariahidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span></button>
+            </div>
+        </div>
+    </section>
+
+        <!--Contacto-->
+            <section id="contacto" class="contacto seccion-oscura">
+                <div class="container">
+                    <div class="contacto-panel text-center text-lgstart">
+                        <div class="row align-items-center g-4">
+                            <div class="col-12 col-lg-4">
+                                <h2>Hablemos</h2>  
+            </div>
+                <div class="col-12 col-lg-5">
+                    <p>Contáctame para solicitar asesoría, revisar una idea o convertir un proyecto en una solución digital funcional.</p>
+            </div>
+                <div class="col-12 col-lg-3 text-center text-lgend">
+                    <a class="btn btn-light rounded-pill px-4 py3" href="mailto:glabra@micorreo.com">Contacto<i class="bi bi-envelope-check-fill ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+ </main>
+
+        <!--Redes Sociales y Footer-->
+            <footer class="seccion-oscura d-flex flex-column justifycontent-center align-items-center text-center">
+                <img class="footer-logo" src="img/Finsi5" alt="Logo del proyecto">
+                    <p class="footer-texto">Aprendo y construyo soluciones todos los días.<br>
+ Trabajemos un proyecto juntos.
+ </p>
+ <div class="iconos-redes-sociales d-flex flex-wrap 
+align-items-center justify-content-center">
+ <a href="https://www.x.com" target="_blank" 
+rel="noopener noreferrer" aria-label="X / Twitter"><i 
+class="bi bi-twitter-x"></i></a>
+ <a href="https://docs.github.com/es" target="_blank" 
+rel="noopener noreferrer" aria-label="GitHub"><i class="bi 
+bi-github"></i></a>
+ <a href="https://mx.linkedin.com" target="_blank" 
+rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi 
+bi-linkedin"></i></a>
+ <a href="https://www.instagram.com" target="_blank" 
+rel="noopener noreferrer" aria-label="Instagram"><i 
+class="bi bi-instagram"></i></a>
+ <a href="mailto:duque@micorreo.com" aria-label="Enviar 
+correo"><i class="bi bi-envelope"></i></a>
+ </div>
+ </footer>
+ <div class="derechos-autor">
+ &#169; Todos los derechos reservados 2025, José Felipe 
+Duque Duarte
+ </div>
+ <!-- JavaScript de Bootstrap: necesario para menú 
+colapsable y carrusel -->
+ <script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bo
+otstrap.bundle.min.js"
+ integrity="sha384-
+ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN95
+4O5Q"
+ crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+</html>
